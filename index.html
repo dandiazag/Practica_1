@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+rel="stylesheet">
     <title>Inicio- Victor Reyes Portfolio</title>
     <style>
 
       body {
         margin: 0;
         padding: 0;
+        font-family: 'Inter', sans-serif;
       }
 
       h2 {
         color: #4b5ebe;
         margin-top: unset;
+      }
+
+      p {
+        font-weight: 200;
       }
       .nav-link{
         display: inline; 
@@ -28,12 +38,91 @@
         margin-right: 10px
       }
 
+      .avatar-header{
+        width: 30%;
+        border-radius: 50%;
+        border: 5px solid #dee0e4;
+      }
+          /* #333c66 */
+      .title-job{
+        text-transform: uppercase;
+        color: #8895bf;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .title-header {
+        color:  #333c66;
+        margin-bottom: 45px;
+        margin-top: 0;
+        padding: 10px;
+      }
+      
+
+      .title-header-name {
+        color: #4b5ebe;
+      }
+
+      .button-header {
+        background-color: #4b5ebe;
+        color: #ffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .text-bold{
+        font-weight: 600;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      .mt{
+        margin-top: 20px;
+      }
+
+      .mt-50 {
+        margin-top: 50px;
+      }
+
+      .mb {
+        margin-bottom: 20px;
+      }
+
+      .mb-50{
+        margin-bottom: 50px;
+      }
+
+      .image-full-width {
+        width: 100%;
+      }
+
+      .habilities {
+        display: inline-flex;
+      }
+
+      .hability-card{
+        background-color: yellow;
+      }
+
+      .hability-icon{
+        height: 40px;
+      }
+
+      .hability-title h4{
+        display: inline;
+      }
     </style>
   </head>
   <body>
     <!-- Inicia NavBar -->
-    <nav>
-      <img src="/img/brand/logo_2.png" alt="Logo de la imagen" height="64px" />
+    <div class="container ">
+    <nav class="mb">
+      <img  src="/img/brand/logo_2.png" alt="Logo de la imagen" height="64px" />
       <!-- src: Origen de la imagen
         alt: Descripcion de la imagen -->
       <ul class="nav-link">
@@ -44,11 +133,13 @@
           <a href="# " style="text-decoration: none">Linked In</a>
         </li>
       </ul>
+    </div>
     </nav>
     <!-- Finaliza Navbar -->
     <!-- Inicia Header -->
-    <header>
-      <img src="img/Avatar.jpg" alt="Este soy yo" style="width: 30%" />
+    <header class="container mb">
+      <img class="avatar-header"
+      src="img/Avatar.jpg" alt="Este soy yo" />
 
       <div
         style="
@@ -57,53 +148,53 @@
           padding: 15px 50px 15px 50px;
         "
       >
-        <h4>Developer</h4>
-        <h1>
-          Hola soy <span>Victor M. Reyes</span> y me gustaria ayudarte a
+        <h4 class="title-job">Developer</h4>
+        <h1 class="title-header ">
+          Hola soy <span class="title-header-name">Victor M. Reyes</span> y me gustaria ayudarte a
           desarrollar tus ideas
         </h1>
-        <a href="https://github.com/oicrruf/ "> Ver Mas </a>
+        <a class="button-header"href="https://github.com/oicrruf/ "> Ver Mas </a>
       </div>
     </header>
     <!-- Finaliza Header -->
     <!-- Inicia seccion de descripcion -->
-    <section style="padding: 0px 80px 0px 80px">
+    <section class="container mt-50 mb-50">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur
-        beatae, excepturi veritatis consequuntur delectus ipsum cum magnam quis
-        deserunt necessitatibus ducimus inventore eveniet, aspernatur illum
-        omnis. Rem, pariatur deserunt?
+        My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for
+         good design. I love to make complex things simple and joy to use. Currently, I focus on building 
+         single-page applications with <span class="text-bold">React</span> and <span class="text-bold">Ember.</span>
       </p>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, iste?
-        Eum iusto nam velit deleniti placeat, iure assumenda. Perspiciatis modi
-        aliquid id ullam blanditiis voluptatem molestiae tenetur repellat harum
-        doloribus aspernatur, autem similique, repellendus eius!
+        Over the past <strong>8 years,</strong> I’ve gained experience across most aspects of the application lifecycle, 
+        including frontend, backend, and dev-ops. This allows me to take full ownership of a project from
+        design to implementation and deployment.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
-        suscipit!
+        I started as a backend developer on <span class="text-bold">Python/Django </span> stack. At some point, I found out that I enjoy 
+        contributing to user experience and design. Since then, I’ve changed my focus to frontend development.
       </p>
     </section>
     <!-- Finaliza seccion de descripcion -->
     <!-- Inicia seccion de habilidades -->
-    <section style=" padding: 30px 0px 30px 0px">
+    <section  style="background-color: #f9f9fa; padding: 30px 0px 30px 0">
+      <div class="container">
       <h2>Habilidades</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid atque,
         laborum eius ea provident consequuntur quam deserunt sapiente possimus
         ullam.
       </p>
-      <div >
-        <div style="display: inline-flex;">
-        <div style="display: inline">
-          <div style="width:60%; margin: auto;padding: 15px 0px 15px 0px">
+      <div class="habilities">
+        
+        <div class="hability-card">
+          <div>
             <!-- Tarjeta de lenguaje de programacion -->
-            <div>
+            <div class="hability-title">
               <img
+              class="hability-icon"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
                 alt="C++"
-                height="25px"
+                
               />
               <h4>Javascript</h4>
               <span>* 6 anos</span>
@@ -149,8 +240,8 @@
             <span>Gatsby</span>
           </div>
         </div>
-      </div>
-      <div style="display: inline-flex;">
+      
+      
         <div style="display: inline; margin-bottom: 20px;">
           <div style="width:60%; margin: auto;padding: 15px 0px 15px 0px"" >
             <!-- Tarjeta de lenguaje de programacion -->
@@ -204,19 +295,21 @@
             <span>Gatsby</span>
           </div>
         </div>
+      
       </div>
-      </div>
+    </div>
     </section>
     <!-- Finalizaseccion de habilidades -->
     <!-- Inicia seccion de proyectos -->
 
     <section style="background-color: beige; padding: 30px 0px 30px 0px">
+      <div class="container">
       <h2>Algunos de mis trabajos</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, provident?
       </p>
-    <div style="display:inline-flex;">
-      <div style="display: inline;" >
+    <div class="habilities">
+      <div>
       <div style="border: 4px solid #fff; width: 80%; margin: auto;">
         <h3>Proyecto 1</h3>
         <p>Lorem ipsum dolor sit.</p>
@@ -275,19 +368,20 @@
       </div>
       </div>
     </div>
+  </div>
     </section>
     <!-- Finaliza seccion de proyectos -->
     <!-- Inicia seccion de imagen -->
     <section>
-      <img
+      <img class="image-full-width"
         src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/8b3f0/working.webp"
         alt="Imagen Decorativa"
-        width="100%"
       />
     </section>
     <!-- Finaliza seccion de imagen -->
     <!-- Inicia seccion de formulario -->
     <section>
+      <div class="container">
       <h2>Contactanos</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
@@ -309,10 +403,12 @@
         ></textarea>
         <button style="display: block;">Enviar</button>
       </form>
+    </div>
     </section>
     <!-- Finaliza seccion de formulario -->
     <!-- Inicia seccion de footer -->
     <footer style="padding: 20px 10px; background-color: #edf2f7;">
+      <div class="container">
       <div style="display: inline;">
         <p>Disenado por Victor M Reyes</p>
       </div>
@@ -325,6 +421,7 @@
           <li style="display: inline;">😂</li>
         </ul>
       </div>
+    </div>
     </footer>
     <!-- Finaliza seccion de formulario -->
   </body>
