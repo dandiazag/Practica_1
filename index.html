@@ -1,428 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
-rel="stylesheet">
-    <title>Inicio- Victor Reyes Portfolio</title>
-    <style>
 
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Inter', sans-serif;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Inicio - Víctor M. Reyes</title>
+</head>
 
-      h2 {
-        color: #4b5ebe;
-        margin-top: unset;
-      }
-
-      p {
-        font-weight: 200;
-      }
-      .nav-link{
-        display: inline; 
-        float: right; 
-        height: 36px
-      }
-
-      .nav-element {
-        display: inline; 
-        padding: 4px; 
-        margin-right: 10px
-      }
-
-      .avatar-header{
-        width: 30%;
-        border-radius: 50%;
-        border: 5px solid #dee0e4;
-      }
-          /* #333c66 */
-      .title-job{
-        text-transform: uppercase;
-        color: #8895bf;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
-
-      .title-header {
-        color:  #333c66;
-        margin-bottom: 45px;
-        margin-top: 0;
-        padding: 10px;
-      }
-      
-
-      .title-header-name {
-        color: #4b5ebe;
-      }
-
-      .button-header {
-        background-color: #4b5ebe;
-        color: #ffff;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .text-bold{
-        font-weight: 600;
-      }
-
-      .container {
-        width: 80%;
-        margin: auto;
-      }
-
-      .mt{
-        margin-top: 20px;
-      }
-
-      .mt-50 {
-        margin-top: 50px;
-      }
-
-      .mb {
-        margin-bottom: 20px;
-      }
-
-      .mb-50{
-        margin-bottom: 50px;
-      }
-
-      .image-full-width {
-        width: 100%;
-      }
-
-      .habilities {
-        display: inline-flex;
-      }
-
-      .hability-card{
-        background-color: yellow;
-      }
-
-      .hability-icon{
-        height: 40px;
-      }
-
-      .hability-title h4{
-        display: inline;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Inicia NavBar -->
-    <div class="container ">
+<body>
+  <div class="container">
+    <!-- Inicia navbar -->
     <nav class="mb">
-      <img  src="/img/brand/logo_2.png" alt="Logo de la imagen" height="64px" />
-      <!-- src: Origen de la imagen
-        alt: Descripcion de la imagen -->
+      <img class="navbar-logo" src="img/brand/logo_2.png" alt="Logo de mi sitio web" />
+      <!-- 
+      src: Origen de la imágen
+      alt: Descripción de la imágine 
+    -->
       <ul class="nav-link">
-        <li class="nav-element">
-          <a href="#" style="text-decoration: none">Github</a>
+        <li class="navbar-element">
+          <a class="navbar-link"  target="_blank" href="github/">GitHub</a>
         </li>
-        <li  class="nav-element">
-          <a href="# " style="text-decoration: none">Linked In</a>
+        <li class="navbar-element">
+          <a class="navbar-link" target="_blank" href="LinkedIn/">LinkedIn</a>
         </li>
       </ul>
-    </div>
-    </nav>
-    <!-- Finaliza Navbar -->
-    <!-- Inicia Header -->
-    <header class="container mb">
-      <img class="avatar-header"
-      src="img/Avatar.jpg" alt="Este soy yo" />
-
-      <div
-        style="
-          display: inline;
-          position: absolute;
-          padding: 15px 50px 15px 50px;
-        "
-      >
-        <h4 class="title-job">Developer</h4>
-        <h1 class="title-header ">
-          Hola soy <span class="title-header-name">Victor M. Reyes</span> y me gustaria ayudarte a
-          desarrollar tus ideas
-        </h1>
-        <a class="button-header"href="https://github.com/oicrruf/ "> Ver Mas </a>
-      </div>
-    </header>
-    <!-- Finaliza Header -->
-    <!-- Inicia seccion de descripcion -->
-    <section class="container mt-50 mb-50">
-      <p>
-        My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for
-         good design. I love to make complex things simple and joy to use. Currently, I focus on building 
-         single-page applications with <span class="text-bold">React</span> and <span class="text-bold">Ember.</span>
-      </p>
-      <p>
-        Over the past <strong>8 years,</strong> I’ve gained experience across most aspects of the application lifecycle, 
-        including frontend, backend, and dev-ops. This allows me to take full ownership of a project from
-        design to implementation and deployment.
-      </p>
-      <p>
-        I started as a backend developer on <span class="text-bold">Python/Django </span> stack. At some point, I found out that I enjoy 
-        contributing to user experience and design. Since then, I’ve changed my focus to frontend development.
-      </p>
-    </section>
-    <!-- Finaliza seccion de descripcion -->
-    <!-- Inicia seccion de habilidades -->
-    <section  style="background-color: #f9f9fa; padding: 30px 0px 30px 0">
-      <div class="container">
-      <h2>Habilidades</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid atque,
-        laborum eius ea provident consequuntur quam deserunt sapiente possimus
-        ullam.
-      </p>
-      <div class="habilities">
-        
-        <div class="hability-card">
-          <div>
-            <!-- Tarjeta de lenguaje de programacion -->
-            <div class="hability-title">
-              <img
-              class="hability-icon"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                alt="C++"
-                
-              />
-              <h4>Javascript</h4>
-              <span>* 6 anos</span>
-            </div>
-            <!-- Tarjeta de lenguaje de programacion-->
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                minima dolorum nulla nostrum saepe ipsam consequuntur libero
-                minus nihil ratione?
-              </p>
-            </div>
-            <div>
-              <span>Ember</span>
-              <span>React</span>
-              <span>Gatsby</span>
-            </div>
-          </div>
-        </div>
-
-        <div style="display: inline">
-          <div style="width:60%; margin: auto;padding: 15px 0px 15px 0px">
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                alt="C++"
-                height="25px"
-              />
-              <h4>Javascript</h4>
-              <span>* 6 anos</span>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                minima dolorum nulla nostrum saepe ipsam consequuntur libero
-                minus nihil ratione?
-              </p>
-            </div>
-            <div><span></span><span></span><span>Gatsby</span></div>
-
-            <span>Ember</span>
-            <span>React</span>
-            <span>Gatsby</span>
-          </div>
-        </div>
-      
-      
-        <div style="display: inline; margin-bottom: 20px;">
-          <div style="width:60%; margin: auto;padding: 15px 0px 15px 0px"" >
-            <!-- Tarjeta de lenguaje de programacion -->
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                alt="C++"
-                height="25px"
-              />
-              <h4>Javascript</h4>
-              <span>* 6 anos</span>
-            </div>
-            <!-- Tarjeta de lenguaje de programacion-->
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                minima dolorum nulla nostrum saepe ipsam consequuntur libero
-                minus nihil ratione?
-              </p>
-            </div>
-            <div>
-              <span>Ember</span>
-              <span>React</span>
-              <span>Gatsby</span>
-            </div>
-          </div>
-        </div>
-
-        <div style="display: inline">
-          <div style="width:60%; margin: auto;padding: 15px 0px 15px 0px">
-            <div>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                alt="C++"
-                height="25px"
-              />
-              <h4>Javascript</h4>
-              <span>* 6 anos</span>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                minima dolorum nulla nostrum saepe ipsam consequuntur libero
-                minus nihil ratione?
-              </p>
-            </div>
-            <div><span></span><span></span><span>Gatsby</span></div>
-
-            <span>Ember</span>
-            <span>React</span>
-            <span>Gatsby</span>
-          </div>
-        </div>
-      
-      </div>
-    </div>
-    </section>
-    <!-- Finalizaseccion de habilidades -->
-    <!-- Inicia seccion de proyectos -->
-
-    <section style="background-color: beige; padding: 30px 0px 30px 0px">
-      <div class="container">
-      <h2>Algunos de mis trabajos</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, provident?
-      </p>
-    <div class="habilities">
-      <div>
-      <div style="border: 4px solid #fff; width: 80%; margin: auto;">
-        <h3>Proyecto 1</h3>
-        <p>Lorem ipsum dolor sit.</p>
-        <div>
-          <span>Ember</span>
-          <span>React</span>
-          <span>Gatsby</span>
-        </div>
-        <div>
-          <span>Full</span>
-        </div>
-        <img
-          src="https://ivanvotti.com/static/6c7cc6c9ead4655e892a24c6b593ff18/2e3ee/vertebrolog.webp"
-          width="100%"
-          alt=""
-        />
-      </div>
-      </div>
-      <div style="display: inline">
-      <div style="border: 4px solid #fff; width: 80%; margin: auto;">
-        <h3>Proyecto 2</h3>
-        <p>Lorem ipsum dolor sit.</p>
-        <div>
-          <span>Ember</span>
-          <span>React</span>
-          <span>Gatsby</span>
-        </div>
-        <div>
-          <span>Full</span>
-        </div>
-        <img
-          src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp"
-          width="100%"
-          alt=""
-        />
-      </div>
-      </div>
-      <div style="display: inline">
-      <div style="border: 4px solid #fff; width: 80%; margin: auto;">
-        <h3>Proyecto 3</h3>
-        <p>Lorem ipsum dolor sit.</p>
-        <div>
-          <span>Ember</span>
-          <span>React</span>
-          <span>Gatsby</span>
-        </div>
-        <div>
-          <span>Full</span>
-        </div>
-        <img
-          src="https://ivanvotti.com/static/ccb2ec424120520a4e18ac40fb1e12ff/2e3ee/svgjar.webp"
-          width="100%"
-          alt=""
-        />
-       </div>
-      </div>
-      </div>
-    </div>
+      <!-- ul: lista desordenada (unorder list) -->
   </div>
-    </section>
-    <!-- Finaliza seccion de proyectos -->
-    <!-- Inicia seccion de imagen -->
-    <section>
-      <img class="image-full-width"
-        src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/8b3f0/working.webp"
-        alt="Imagen Decorativa"
-      />
-    </section>
-    <!-- Finaliza seccion de imagen -->
-    <!-- Inicia seccion de formulario -->
-    <section>
-      <div class="container">
-      <h2>Contactanos</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-        provident minima, nemo placeat ut libero obcaecati quae in sunt eaque
-        voluptatum nulla nesciunt corrupti ad fugit ipsam suscipit dolores
-        magnam!
-      </p>
-      <form action="#" >
-        <div style="margin-bottom: 5px;">
-          <input type="text" placeholder="Tu Nombre" />
-          <input type="text" placeholder="Tu correo electronico" />
+  </nav>
+  <!-- Finaliza navbar -->
+  <!-- Inicia header -->
+  <div class="header-background">
+  <header class="container mb">
+    <img class="avatar-header" src="img/avatar.jpg" alt="Esto soy you" />
+    <div class="header-detail" >
+      <h4 class="title-job">
+        React Developer
+      </h4>
+      <h1 class="title-header">
+        ¡Hola soy <span class="title-header-name">Víctor M. Reyes</span> y me gustaría ayudarte desarrollar tus ideas!
+      </h1>
+      <a class="button-main" href="https://github.com/oicrruf/">
+        Ver más
+      </a>
+    </div>
+    <!-- 
+      a: Sirve para anclar otros sitios web o páginas internas 
+    -->
+  </header>
+  <!-- Finaliza header -->
+  <!-- Inicia sección de descripción -->
+  <section class="container mt-50 pb-50">
+    <p>
+      My name is Ivan Votti. I’m a frontend developer with a full-stack background and a keen eye for good design. I
+      love to make complex things simple and joy to use. Currently, I focus on building single-page applications with
+      <span class="text-bold">React</span> and <span class="text-bold">Ember</span>.
+    </p>
+    <p>
+      Over the past <strong>8 years</strong>, I’ve gained experience across most aspects of the
+      application lifecycle, including
+      frontend, backend, and dev-ops. This allows me to take full ownership of a project from design to implementation
+      and deployment.
+    </p>
+    <p>
+      I started as a backend developer on <span class="text-bold">Python/Django</span> stack. At some point, I found
+      out
+      that I enjoy contributing to
+      user experience and design. Since then, I’ve changed my focus to frontend development.
+    </p>
+  </section>
+  </div>
+  <!-- Finaliza sección de descripción -->
+  <!-- Inicia sección de habilidades -->
+  <section class="section-design -bg__gray">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <p class="mb-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta, possimus deleniti quasi
+        labore
+        nostrum a
+        numquam repellat rerum quia!</p>
+      <div class="habilities">
+        <!-- Inicia tarjeta de lenguaje de programación -->
+        <div class="hability-card">
+          <!-- Inicia bloque superior -->
+          <div>
+            <div>
+              <img class="habilty-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt="C++">
+              <h4 class="hability-title">Javascript</h4>
+              <span class="hability-dot">·</span>
+              <span class="hability-experience"> 6 años</span>
+            </div>
+            <!-- Finaliza bloque superior -->
+            <!-- Inicia bloque medio -->
+
+            <p class="hability-description">Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Praesentium, vitae
+              dolor aliquam
+              accusantium
+              magni
+              dolore aperiam atque earum suscipit eligendi!</p>
+            <!-- Finaliza bloque medio -->
+            <!-- Inicia bloque bajo -->
+            <div>
+              <span class="hability-tag">Ember</span>
+              <span class="hability-tag">React</span>
+              <span class="hability-tag">Gatsby</span>
+            </div>
+          </div>
+          <!-- Finaliza bloque bajo -->
         </div>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Tu mensaje"
-        ></textarea>
-        <button style="display: block;">Enviar</button>
+        <!-- Finaliza tarjeta de lenguaje de programación -->
+        <!-- Inicia tarjeta de lenguaje de programación -->
+        <div class="hability-card">
+          <!-- Inicia bloque superior -->
+          <div>
+            <div>
+              <img class="habilty-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt="C++">
+              <h4 class="hability-title">Javascript</h4>
+              <span class="hability-dot">·</span>
+              <span class="hability-experience"> 6 años</span>
+            </div>
+            <!-- Finaliza bloque superior -->
+            <!-- Inicia bloque medio -->
+
+            <p class="hability-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae
+              dolor aliquam
+              accusantium
+              magni
+              dolore aperiam atque earum suscipit eligendi!</p>
+            <!-- Finaliza bloque medio -->
+            <!-- Inicia bloque bajo -->
+            <div>
+              <span class="hability-tag">Ember</span>
+              <span class="hability-tag">React</span>
+              <span class="hability-tag">Gatsby</span>
+            </div>
+          </div>
+          <!-- Finaliza bloque bajo -->
+        </div>
+        <!-- Finaliza tarjeta de lenguaje de programación -->
+        <!-- Inicia tarjeta de lenguaje de programación -->
+        <div class="hability-card">
+          <!-- Inicia bloque superior -->
+          <div>
+            <div>
+              <img class="habilty-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                alt="C++">
+              <h4 class="hability-title">Javascript</h4>
+              <span class="hability-dot">·</span>
+              <span class="hability-experience"> 6 años</span>
+            </div>
+            <!-- Finaliza bloque superior -->
+            <!-- Inicia bloque medio -->
+
+            <p class="hability-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vitae
+              dolor aliquam
+              accusantium
+              magni
+              dolore aperiam atque earum suscipit eligendi!</p>
+            <!-- Finaliza bloque medio -->
+            <!-- Inicia bloque bajo -->
+            <div>
+              <span class="hability-tag">Ember</span>
+              <span class="hability-tag">React</span>
+              <span class="hability-tag">Gatsby</span>
+            </div>
+          </div>
+          <!-- Finaliza bloque bajo -->
+        </div>
+        <!-- Finaliza tarjeta de lenguaje de programación -->
+      </div>
+    </div>
+  </section>
+  <!-- Finaliza sección de habilidades -->
+  <!-- Inicia sección de algunos de mi proyectos -->
+  <section class="section-design -bg__gray">
+    <div class="container">
+      <div class="section-design__center w-50">
+        <h2>Algunos de mis proyectos</h2>
+        <p class="mb-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sit!</p>
+      </div>
+      <div class="projects">
+        <a href="project/project-1/">
+        <div class="project-single">
+          <!-- Inicia tarjeta de proyecto -->
+          <div class="project-card -bg__salmon">
+            <h3>Proyecto 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <!-- Etiquetas de proyecto -->
+            <div class="mb">
+              <span class="project-tag">Ember</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">Gatsby</span>
+            </div>
+            <div class="mb">
+              <span class="profile-tag">Full desing & development</span>
+            </div>
+            <!-- Finaliza etiquetas de proyecto -->
+            <!-- Imágen de proyecto -->
+            <img src="https://ivanvotti.com/static/6c7cc6c9ead4655e892a24c6b593ff18/2e3ee/vertebrolog.webp" alt=""
+              width="100%">
+            <!-- Finaliza imagen de proyecto -->
+          </div>
+          <!-- Finaliza tarjeta de proyecto -->
+        </div>
+      </a>
+      <a href="project/project-2/">
+        <div class="project-single">
+          <div class="project-card -bg__blue">
+            <h3>Proyecto 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="mb">
+              <span class="project-tag">Ember</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">Gatsby</span>
+            </div>
+            <div class="mb">
+              <span class="profile-tag">Full desing & development</span>
+            </div>
+            <img src="https://ivanvotti.com/static/694eabe08cd1dc177638127547a6378e/2e3ee/csural.webp" alt=""
+              width="100%">
+          </div>
+        </div>
+      </a>
+      <a href="project/project-3/">
+        <div class="project-single">
+          <div class="project-card  -bg__purple">
+            <h3>Proyecto 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="mb">
+              <span class="project-tag">Ember</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">Gatsby</span>
+            </div>
+            <div class="mb">
+              <span class="profile-tag">Full desing & development</span>
+            </div>
+            <img src="https://ivanvotti.com/static/ccb2ec424120520a4e18ac40fb1e12ff/2e3ee/svgjar.webp" alt=""
+              width="100%">
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </section>
+  <!-- Finaliza sección de algunos de mi proyectos -->
+  <!-- Inicia sección de imágen -->
+  <section>
+    <img class="image-full-width" src="https://ivanvotti.com/static/cfe0191b18ad06cd620f3e1b65c34964/8b3f0/working.webp"
+      alt="Imagen decorativa">
+  </section>
+  <!-- Finaliza sección de imágen -->
+  <!-- Inicia sección de formulario -->
+  <section class="section-design -bg__white">
+    <div class="container">
+      <div class="section-design__center w-50">
+      <h2>Contáctanos</h2>
+      <p class="mb-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aspernatur consequuntur facere
+        eveniet vel rem
+        voluptates non delectus aliquid.</p>
+      </div>
+      <form action="#" id="contact-form">
+        <div class="two-inputs">
+          <input type="text" placeholder="Tu nombre">
+          <input type="text" placeholder="Tu correo electrónico">
+        </div>
+        <div>
+          <textarea rows="10" placeholder="Tu mensaje"></textarea>
+        </div>
+        <div class="button-contact">
+          <button class="button-main">Enviar</button>
+        </div>
       </form>
     </div>
-    </section>
-    <!-- Finaliza seccion de formulario -->
-    <!-- Inicia seccion de footer -->
-    <footer style="padding: 20px 10px; background-color: #edf2f7;">
-      <div class="container">
-      <div style="display: inline;">
-        <p>Disenado por Victor M Reyes</p>
+  </section>
+  <!-- Finaliza sección de formulario -->
+  <!-- Inicia sección de footer -->
+  <footer class="section-design -bg__blue-light">
+    <div class="container">
+      <div class="row">
+        <div>
+          <p>Diseñado por Víctor M. Reyes con ❤️</p>
+        </div>
+        <div>
+          <ul class="float-right">
+            <li class=" icon-list">🤓</li>
+            <li class=" icon-list">😍</li>
+            <li class=" icon-list">😒</li>
+            <li class=" icon-list">👌</li>
+            <li class=" icon-list">🥳</li>
+          </ul>
+        </div>
       </div>
-      <div style="display: inline; float: right;">
-        <ul style="display: inline;">
-          <li style="display: inline;">😒</li>
-          <li style="display: inline;">😊</li>
-          <li style="display: inline;">😜</li>
-          <li style="display: inline;">🤷‍♀️</li>
-          <li style="display: inline;">😂</li>
-        </ul>
-      </div>
+
     </div>
-    </footer>
-    <!-- Finaliza seccion de formulario -->
-  </body>
+
+  </footer>
+  <!-- Finaliza sección de footer -->
+</body>
+
 </html>
