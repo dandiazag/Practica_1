@@ -21,7 +21,7 @@ body {
 }
 
 h2 {
-  color: deeppink;
+  color: lightseagreen;
   margin-top: unset;
   text-align: center;
 }
@@ -40,10 +40,11 @@ h2 {
 }
 
 .avatar-header {
-  width: 40%;
-  border-radius: 4%;
+  width: 62%;
+  border-radius: 50%;
   border: 5px solid #dee0e4;
   align-self: center;
+  margin-top: 32px;
 }
 
 .title-job {
@@ -68,12 +69,12 @@ h2 {
 }
 
 .title-header-name {
-  color: lightblue;
+  color: lightseagreen;
 }
 
 .button-main {
   background-color: white;
-  color: deeppink;
+  color: lightseagreen;
   text-decoration: none;
   font-weight: 800;
   /* padding-top: 10px;
@@ -81,21 +82,21 @@ h2 {
   padding-left: 20px;
   padding-right: 20px; */
   /* padding: 10px 20px 10px 20px; */
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .button-secondary{
-  background-color: deeppink;
+  background-color: lightseagreen;
   color: white;
 }
 .button-main:hover{
   background-color: lightblue;
-  color: deeppink;
+  color: lightseagreen;
 }
 .button-secondary:hover{
   background-color: lightblue;
-  color: deeppink;
+  color: lightseagreen;
 }
 
 .text-bold {
@@ -127,7 +128,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 13px;
-  color: deeppink;
+  color: lightseagreen;
 }
 
 .navbar-link:hover {
@@ -157,7 +158,7 @@ h2 {
 }
 
 .header-background {
-  background-image: url("../brand/background7.jpg.jpg");
+  background-image: url("../brand/bk.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -278,7 +279,7 @@ h2 {
 }
 
 .float-right {
-  float: right;
+ display: flex;
 }
 
 .icon-list {
@@ -416,9 +417,9 @@ h2 {
     display: grid;
     grid-template-columns: 100%;
   }
-  .avatar-header{
+  /* .avatar-header{
     display: none;
-  }
+  } */
   .title-header{
     font-size: 30px;
   }
@@ -454,7 +455,7 @@ h2 {
   }
   .mb{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
   }
   .hability-card{
     margin-bottom: 20px;
@@ -463,9 +464,9 @@ h2 {
     display: flex;
     justify-content: end;
   }
-  .avatar-header{
+  /* .avatar-header{
     display: none;
-  }
+  } */
   .header-detail{
     padding: 30px 0px;
   }
