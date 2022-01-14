@@ -45,6 +45,7 @@ h2 {
   border: 5px solid #dee0e4;
   align-self: center;
   margin-top: 32px;
+  min-width: 242px;
 }
 
 .title-job {
@@ -69,7 +70,7 @@ h2 {
 }
 
 .title-header-name {
-  color: lightseagreen;
+  color: yellow;
 }
 
 .button-main {
@@ -89,14 +90,15 @@ h2 {
 .button-secondary{
   background-color: lightseagreen;
   color: white;
+  cursor: pointer;
 }
 .button-main:hover{
-  background-color: lightblue;
-  color: lightseagreen;
+  background-color: yellow;
+  color: darkblue;
 }
 .button-secondary:hover{
-  background-color: lightblue;
-  color: lightseagreen;
+  background-color: yellow;
+  color: darkblue;
 }
 
 .text-bold {
@@ -110,6 +112,7 @@ h2 {
 
 .text-header{
   color: white;
+  font-weight: 600
 }
 .mt {
   margin-top: 20px;
@@ -155,13 +158,15 @@ h2 {
 
 .mb-50 {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .header-background {
-  background-image: url("../brand/bk.jpeg");
+  background-image: url("../brand/bk_5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  opacity: 94%;
 }
 .image-full-width {
   width: 80%;
@@ -263,7 +268,10 @@ h2 {
 }
 
 .row {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* .row div,
@@ -285,6 +293,7 @@ h2 {
 .icon-list {
   filter: grayscale(100%);
   transition: all 0.15s ease-out;
+  margin-right: 5px;
 }
 
 .icon-list:hover {
@@ -351,7 +360,7 @@ h2 {
 }
 
 .-bg__salmon {
-  background-color: #ffe5d6;
+  background-color: #fbec5d;
 }
 
 .-bg__blue {
@@ -378,6 +387,7 @@ h2 {
   width: 50%;
   margin: auto;
 }
+
 
 @media only screen and (max-width:450px){
   .navbar-logo{
@@ -415,11 +425,11 @@ h2 {
   }
   .mb{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 100% !important;
   }
-  /* .avatar-header{
+  .avatar-header{
     display: none;
-  } */
+  } 
   .title-header{
     font-size: 30px;
   }
@@ -427,6 +437,7 @@ h2 {
     text-align: justify;
   }
   .section-design__center p {
+    
     text-align: justify;
 }
 .button-secondary{
@@ -454,9 +465,12 @@ h2 {
     display: grid;
   }
   .mb{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+      display: grid;
+      grid-template-columns: 50% 50%;
+      /* align-items: unset; */
+      justify-items: center;;
+    }
+  
   .hability-card{
     margin-bottom: 20px;
   }
@@ -464,7 +478,7 @@ h2 {
     display: flex;
     justify-content: end;
   }
-  /* .avatar-header{
+    /*.avatar-header{
     display: none;
   } */
   .header-detail{
@@ -502,6 +516,9 @@ h2 {
   .float-right{
     padding-left: 0;
   }
+  .header-detail {
+    margin-top: 0px;
+  }
 }
 @media only screen and (min-width:1200px){
 
@@ -511,9 +528,10 @@ h2 {
   }
 
   .avatar-header{
-    width: 50%;
+    width: 62%;
     align-self: end;
     margin-top: 25px;
+    max-width: 300px;
   }
 
   .title-header{
